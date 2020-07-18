@@ -1,0 +1,127 @@
+function myNameFunction() {
+  var x = document.getElementById("fname").value;
+ var y=/^[a-zA-Z\s]{3,15}$/;
+if(y.test(x)){
+  document.getElementById("testingName").style.color="green";
+document.getElementById("testingName").innerHTML="valid &#128512";
+return true;
+}
+else{
+  document.getElementById("testingName").style.color="red";
+document.getElementById("testingName").innerHTML="Enter 3-15 characters";
+return false;
+}
+}
+function myEmailFunction(){
+var x = document.getElementById("email").value;
+var y=/^[a-zA-z0-9\.\s\+\-]+@[a-zA-z0-9\.\s\+\-]+\.[a-zA-z\.\_\+\-]{0,3}$/;
+if(y.test(x)){
+document.getElementById("testingEmail").style.color="green";
+document.getElementById("testingEmail").innerHTML="Valid &#128516";
+return true;
+
+}
+else{
+document.getElementById("testingEmail").style.color="red";
+document.getElementById("testingEmail").innerHTML="Enter a valid email address";
+return false;
+}
+
+}
+function myPassword(){
+var x=document.getElementById("pass").value; 
+var y=/^(?=.*\d)(?=.*\w)(?=.*\W).{8,}$/;
+if(y.test(x))
+{
+document.getElementById("testingpaas").style.color="green";
+document.getElementById("testingpaas").innerHTML="Valid";
+return true;
+}
+else
+{
+document.getElementById("testingpaas").style.color="red";
+document.getElementById("testingpaas").innerHTML="Your paasword must contain one UPPERCASE letter and one lowercase letter and one digit and must of 8 characters";
+return false;
+}
+}
+function ValidatePassword(){
+var p1=document.getElementById("pass").value;
+var p2=document.getElementById("cpaas").value;
+if(p1==p2)
+{
+document.getElementById("conpaas").style.color="green";
+document.getElementById("conpaas").innerHTML="Password matched &#128578";
+return true;
+}
+else{
+document.getElementById("conpaas").style.color="red";
+document.getElementById("conpaas").innerHTML="Password didn't matched &#128528";
+return false;
+}}
+function myUsername(){
+var x=document.getElementById("username").value;
+var y=/^(?=.*\d)(?=.*\w).{6,}$/;
+if(y.test(x))
+{
+document.getElementById("testinguser").style.color="green";
+document.getElementById("testinguser").innerHTML="Username is selected";
+return true;
+}
+else{
+document.getElementById("testinguser").style.color="red";
+document.getElementById("testinguser").innerHTML="Your username must contain only letters and atleast one digit and of atleast 6 characters but doesn't contain whitespace within it";
+return false;
+}}
+function myAddress(){
+var x=document.getElementById("address").value;
+var y=/^[a-zA-Z0-9\w\W]{10,100}$/;
+if(y.test(x))
+{
+document.getElementById("testingaddress").style.color="green";
+document.getElementById("testingaddress").innerHTML="&#128077";
+return true;
+}
+else
+{
+document.getElementById("testingaddress").style.color="red";
+document.getElementById("testingaddress").innerHTML="Adress must be of atleast 10 characters";
+return false;
+}
+}
+function myPHNumber(){
+var x=document.getElementById("phnumber").value;
+var y=/^\d{3}-\d{3}-\d{4}$/;
+if(y.test(x))
+{
+document.getElementById("testingno").style.color="green";
+document.getElementById("testingno").innerHTML="It's perfect &#128512";
+return true;
+}
+else{
+document.getElementById("testingno").style.color="red";
+document.getElementById("testingno").innerHTML="Use xxx-xxx-xxxx format";
+return false;
+}
+}
+function displayalert(){
+var x=document.getElementById("fname").value;
+document.getElementById("lastalert").innerHTML=alert('Thank you to fill this form, '+ x);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
