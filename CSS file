@@ -1,0 +1,43 @@
+body{
+background-image:url('https://cdn.hipwallpaper.com/m/20/65/S9BEqR.jpeg');
+background-size:1600px 700px;
+} 
+p{
+margin-top:0px;
+}
+table{
+margin-left:100px;
+margin-right:120px;
+margin-top:100px;
+color:red;
+background-color:yellow;
+width:83%;
+border-radius:50px;
+}
+tr,td{
+padding-left:450px;
+}
+
+#heading{
+font-family:Colonna MT;
+font-size:120px;
+color:blue;
+font-style:Italic;
+font-weight:bolder;
+}
+button{
+border-radius:28px;
+background-color:rgb(34,99,78);
+color:red;
+padding:10px 20px;
+font-size:25px;
+cursor:pointer;
+font-weight:bolder;
+font-family:Curlz MT;
+}
+.other{
+font-family:Imprint MT shadow;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
